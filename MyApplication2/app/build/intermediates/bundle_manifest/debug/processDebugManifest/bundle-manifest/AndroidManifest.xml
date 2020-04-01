@@ -44,6 +44,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.deng.myapplication2.View.Main3Activity" />
+        <activity android:name="com.example.deng.myapplication2.View.Main2Activity" />
         <activity android:name="com.example.deng.myapplication2.View.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,8 +55,6 @@
         </activity>
         <activity android:name="com.example.deng.myapplication2.View.Main6Activity" />
         <activity android:name="com.example.deng.myapplication2.View.Main4Activity" />
-        <activity android:name="com.example.deng.myapplication2.View.Main3Activity" />
-        <activity android:name="com.example.deng.myapplication2.View.Main2Activity" />
 
         <meta-data
             android:name="com.google.android.actions"

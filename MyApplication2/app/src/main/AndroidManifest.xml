@@ -11,18 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.MainActivity"
-            >
+        <activity android:name=".View.Main3Activity"></activity>
+        <activity android:name=".View.Main2Activity" />
+        <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.Main6Activity"></activity>
+        <activity android:name=".View.Main6Activity" />
         <activity android:name=".View.Main4Activity" />
-        <activity android:name=".View.Main3Activity" />
-        <activity android:name=".View.Main2Activity" />
 
         <meta-data
             android:name="com.google.android.actions"

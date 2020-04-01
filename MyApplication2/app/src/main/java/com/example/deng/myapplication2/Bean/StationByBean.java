@@ -2,9 +2,10 @@ package com.example.deng.myapplication2.Bean;
 
 public class StationByBean {
     String stationname;
+    String time;
 
     public String getStationname() {
-        return stationname;
+        return this.stationname;
     }
 
     public StationByBean(String stationname, String time) {
@@ -17,12 +18,10 @@ public class StationByBean {
     }
 
     public String getTime() {
-        return time;
+        return this.time;
     }
 
     public void setTime(String time) {
         this.time = time;
     }
-
-    String time;
 }

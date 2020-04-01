@@ -1,19 +1,20 @@
 package com.example.deng.myapplication2.Bean;
 
 public class StationInputBean {
+    String arrive;
+    String date;
+    String start;
     String train_no;
 
     public StationInputBean(String train_no, String start, String arrive, String date) {
         this.train_no = train_no;
         this.start = start;
-        this.arrive=arrive;
+        this.arrive = arrive;
         this.date = date;
     }
 
-    String start;
-
     public String getTrain_no() {
-        return train_no;
+        return this.train_no;
     }
 
     public void setTrain_no(String train_no) {
@@ -21,7 +22,7 @@ public class StationInputBean {
     }
 
     public String getStart() {
-        return start;
+        return this.start;
     }
 
     public void setStart(String start) {
@@ -29,7 +30,7 @@ public class StationInputBean {
     }
 
     public String getArrive() {
-        return arrive;
+        return this.arrive;
     }
 
     public void setArrive(String arrive) {
@@ -37,13 +38,10 @@ public class StationInputBean {
     }
 
     public String getDate() {
-        return date;
+        return this.date;
     }
 
     public void setDate(String date) {
         this.date = date;
     }
-
-    String arrive;
-    String date;
 }

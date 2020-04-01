@@ -49,64 +49,64 @@ public class Model_GETBY implements IModel_GETBY {
         this.context=context;
     }
     public void trainby(final RecyclerView rcv1, final String leave, final String arrive){
-            Observable.fromIterable(list).concatMapIterable(new Function<String, Iterable<ArrayList<TrainByBean>>>() {
-                @Override
-                public Iterable<ArrayList<TrainByBean>> apply(String s) throws Exception {
-                    ApiService2 apiService2 = RetrofitManager.getInstance(ApiName.Path2, context).setCreate(ApiService2.class);
-                    DataBase2 dataBase2 = new DataBase2(context, "stationmessage.db", null, 1);
-                    String leaveno = DataBaseUtil2.selectInvstation(dataBase2, leave);
-                    String arriveno = DataBaseUtil2.selectInvstation(dataBase2, arrive);
-                    Observable<ResponseBody> getBy = apiService2.getTrainByMessage("query" + s, "2020-03-18", leaveno, arriveno, "ADULT");
-                    getBy.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<ResponseBody>() {
+        Observable.fromIterable(list).concatMapIterable(new Function<String, Iterable<ArrayList<TrainByBean>>>() {
+            @Override
+            public Iterable<ArrayList<TrainByBean>> apply(String s) throws Exception {
+                ApiService2 apiService2 = RetrofitManager.getInstance(ApiName.Path2, context).setCreate(ApiService2.class);
+                DataBase2 dataBase2 = new DataBase2(context, "stationmessage.db", null, 1);
+                String leaveno = DataBaseUtil2.selectInvstation(dataBase2, leave);
+                String arriveno = DataBaseUtil2.selectInvstation(dataBase2, arrive);
+                Observable<ResponseBody> getBy = apiService2.getTrainByMessage("query" + s, "2020-03-18", leaveno, arriveno, "ADULT");
+                getBy.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<ResponseBody>() {
 
-                        @Override
-                        public void onSubscribe(Disposable d) {
+                    @Override
+                    public void onSubscribe(Disposable d) {
 
-                        }
+                    }
 
-                        @Override
-                        public void onNext(ResponseBody responseBody) {
-                            String a = CheckFolders.getSDPath();
-                            FileUtil.writeBig(a + "/getbytrainmessage.txt", responseBody.byteStream(),false);
-                            try {
-                                data = FileUtil.readToJson2(a + "/getbytrainmessage.txt");
-                                if (data.size() > 0) {
-                                    for (int i = 0; i < data.size(); i++) {
-                                        String[] arrays = data.get(i).split("\\|");
-                                        trainByBeans.add(new TrainByBean("1", arrays[3], arrays[4], arrays[5], arrays[6], arrays[7], arrays[8], arrays[9], "2"));
-                                    }
-                                    datalist.add(trainByBeans);
-                                    if (datalist.size() == 1) {
-                                        onFinish.showTrainBys(trainByBeans, rcv1);
-                                    }
+                    @Override
+                    public void onNext(ResponseBody responseBody) {
+                        String a = CheckFolders.getSDPath();
+                        FileUtil.writeBig(a + "/getbytrainmessage.txt", responseBody.byteStream(),false);
+                        try {
+                            data = FileUtil.readToJson2(a + "/getbytrainmessage.txt");
+                            if (data.size() > 0) {
+                                for (int i = 0; i < data.size(); i++) {
+                                    String[] arrays = data.get(i).split("\\|");
+                                    trainByBeans.add(new TrainByBean("1", arrays[3], arrays[4], arrays[5], arrays[6], arrays[7], arrays[8], arrays[9], "2"));
                                 }
-
-                            } catch (Exception e) {
-
+                                datalist.add(trainByBeans);
+                                if (datalist.size() == 1) {
+                                    onFinish.showTrainBys(trainByBeans, rcv1);
+                                }
                             }
-                        }
 
-                        @Override
-                        public void onError(Throwable e) {
+                        } catch (Exception e) {
 
                         }
+                    }
 
-                        @Override
-                        public void onComplete() {
+                    @Override
+                    public void onError(Throwable e) {
 
-                        }
+                    }
 
-                    });
-                    return datalist;
-                }
-            }).subscribe(new Consumer<ArrayList<TrainByBean>>() {
-                @Override
-                public void accept(ArrayList<TrainByBean> trainByBeans) throws Exception {
+                    @Override
+                    public void onComplete() {
 
-                }
-            });
+                    }
+
+                });
+                return datalist;
+            }
+        }).subscribe(new Consumer<ArrayList<TrainByBean>>() {
+            @Override
+            public void accept(ArrayList<TrainByBean> trainByBeans) throws Exception {
+
+            }
+        });
     }
-public interface OnFinish{
-    void showTrainBys(ArrayList<TrainByBean> trainByBeans,RecyclerView rcv1);
-}
+    public interface OnFinish{
+        void showTrainBys(ArrayList<TrainByBean> trainByBeans,RecyclerView rcv1);
+    }
 }

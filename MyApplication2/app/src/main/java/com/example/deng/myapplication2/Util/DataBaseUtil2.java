@@ -107,7 +107,7 @@ public class DataBaseUtil2 {
         Cursor cursor=db.rawQuery("select stationbianhao from stationmessage where "+columnname+" = ?",new String[]{String.valueOf(result)});
         if(db.isOpen()){
             while(cursor.moveToNext()){
-                  bh=cursor.getString(cursor.getColumnIndex("stationbianhao"));
+                bh=cursor.getString(cursor.getColumnIndex("stationbianhao"));
             }
         }
         cursor.close();

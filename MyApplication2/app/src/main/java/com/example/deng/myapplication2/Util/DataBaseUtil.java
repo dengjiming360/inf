@@ -36,15 +36,15 @@ public class DataBaseUtil {
         return sqlite1;
     }
     public static int select(DataBase dataBase){
-       SQLiteDatabase sqlite2=dataBase.getWritableDatabase();
-       int count=-1;
-       if(sqlite2.isOpen()){
-           Cursor cursor=sqlite2.rawQuery("select * from trainmessage",null);
-           count=cursor.getCount();
-           cursor.close();
-       }
-       sqlite2.close();
-       return count;
+        SQLiteDatabase sqlite2=dataBase.getWritableDatabase();
+        int count=-1;
+        if(sqlite2.isOpen()){
+            Cursor cursor=sqlite2.rawQuery("select * from trainmessage",null);
+            count=cursor.getCount();
+            cursor.close();
+        }
+        sqlite2.close();
+        return count;
     }
     public static String selectpos(DataBase dataBase,int pos){
         SQLiteDatabase sqlite2=dataBase.getWritableDatabase();
@@ -52,7 +52,7 @@ public class DataBaseUtil {
         if(sqlite2.isOpen()){
             Cursor cursor=sqlite2.rawQuery("select * from trainmessage where id = ?",new String[]{String.valueOf(pos)});
             while (cursor.moveToNext()) {
-                    record = cursor.getString(1) + "#" + cursor.getString(2) + "#" + cursor.getString(3);
+                record = cursor.getString(1) + "#" + cursor.getString(2) + "#" + cursor.getString(3);
             }
             cursor.close();
         }
@@ -60,12 +60,12 @@ public class DataBaseUtil {
         return record;
     }
     public static void delete(DataBase dataBase, Context context){
-            SQLiteDatabase db = dataBase.getWritableDatabase();
-            if (db.isOpen()) {
-                db.execSQL("delete from trainmessage");
-                db.execSQL("DELETE FROM sqlite_sequence WHERE name = 'trainmessage'");
-                context.deleteDatabase("trainmessage.db");
-                db.close();
+        SQLiteDatabase db = dataBase.getWritableDatabase();
+        if (db.isOpen()) {
+            db.execSQL("delete from trainmessage");
+            db.execSQL("DELETE FROM sqlite_sequence WHERE name = 'trainmessage'");
+            context.deleteDatabase("trainmessage.db");
+            db.close();
         }
     }
 

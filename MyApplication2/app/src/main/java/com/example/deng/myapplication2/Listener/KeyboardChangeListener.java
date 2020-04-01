@@ -1,10 +1,11 @@
-package com.example.deng.myapplication2.Listener;
 
-import android.app.Activity;
-import android.os.Build;
-import android.util.Log;
-import android.view.View;
-import android.view.ViewTreeObserver;
+        package com.example.deng.myapplication2.Listener;
+
+        import android.app.Activity;
+        import android.os.Build;
+        import android.util.Log;
+        import android.view.View;
+        import android.view.ViewTreeObserver;
 
 
 public class KeyboardChangeListener implements ViewTreeObserver.OnGlobalLayoutListener {
@@ -84,3 +85,4 @@ public class KeyboardChangeListener implements ViewTreeObserver.OnGlobalLayoutLi
         }
     }
 }
+

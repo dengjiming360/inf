@@ -51,13 +51,13 @@ public class DealFileUtil {
         return list;
     }
     public static ArrayList<String> divider(InputStream inputStream,ArrayList<Integer> in,ArrayList<String> divider,String symbol){
-            InputStreamReader inputStreamReader=new InputStreamReader(inputStream);
-            BufferedReader buf = new BufferedReader(inputStreamReader);
-            StringBuffer strb=new StringBuffer();
-            String c="";
-            String temp="";
-            try{
-           while(buf.read()!=-1) {
+        InputStreamReader inputStreamReader=new InputStreamReader(inputStream);
+        BufferedReader buf = new BufferedReader(inputStreamReader);
+        StringBuffer strb=new StringBuffer();
+        String c="";
+        String temp="";
+        try{
+            while(buf.read()!=-1) {
                 c = buf.readLine();
                 strb.append(c);
                 in = DealFileUtil.seekposition(c, symbol, in, 0);

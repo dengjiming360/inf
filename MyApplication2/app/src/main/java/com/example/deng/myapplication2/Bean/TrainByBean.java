@@ -1,22 +1,30 @@
 package com.example.deng.myapplication2.Bean;
 
 public class TrainByBean {
-    public TrainByBean(String trainno, String bianhao, String start, String end, String leave, String arrive, String leavetime,String arrivetime,String date) {
+    public String arrive;
+    public String arrivetime;
+    public String bianhao;
+    public String date;
+    public String end;
+    public String leave;
+    public String leavetime;
+    public String start;
+    String trainno;
+
+    public TrainByBean(String trainno, String bianhao, String start, String end, String leave, String arrive, String leavetime, String arrivetime, String date) {
         this.trainno = trainno;
         this.bianhao = bianhao;
         this.start = start;
         this.end = end;
         this.leave = leave;
         this.arrive = arrive;
-        this.leavetime=leavetime;
-        this.arrivetime=arrivetime;
+        this.leavetime = leavetime;
+        this.arrivetime = arrivetime;
         this.date = date;
     }
 
-    String trainno;
-
     public String getTrainno() {
-        return trainno;
+        return this.trainno;
     }
 
     public void setTrainno(String trainno) {
@@ -24,7 +32,7 @@ public class TrainByBean {
     }
 
     public String getBianhao() {
-        return bianhao;
+        return this.bianhao;
     }
 
     public void setBianhao(String bianhao) {
@@ -32,7 +40,7 @@ public class TrainByBean {
     }
 
     public String getStart() {
-        return start;
+        return this.start;
     }
 
     public void setStart(String start) {
@@ -40,7 +48,7 @@ public class TrainByBean {
     }
 
     public String getEnd() {
-        return end;
+        return this.end;
     }
 
     public void setEnd(String end) {
@@ -48,7 +56,7 @@ public class TrainByBean {
     }
 
     public String getLeave() {
-        return leave;
+        return this.leave;
     }
 
     public void setLeave(String leave) {
@@ -56,7 +64,7 @@ public class TrainByBean {
     }
 
     public String getArrive() {
-        return arrive;
+        return this.arrive;
     }
 
     public void setArrive(String arrive) {
@@ -64,22 +72,15 @@ public class TrainByBean {
     }
 
     public String getDate() {
-        return date;
+        return this.date;
     }
 
     public void setDate(String date) {
         this.date = date;
     }
 
-    public  String bianhao;
-    public  String start;
-    public  String end;
-    public  String leave;
-    public String arrive;
-    public String date;
-
     public String getArrivetime() {
-        return arrivetime;
+        return this.arrivetime;
     }
 
     public void setArrivetime(String arrivetime) {
@@ -87,13 +88,10 @@ public class TrainByBean {
     }
 
     public String getLeavetime() {
-        return leavetime;
+        return this.leavetime;
     }
 
     public void setLeavetime(String leavetime) {
         this.leavetime = leavetime;
     }
-
-    public String arrivetime;
-    public String leavetime;
 }

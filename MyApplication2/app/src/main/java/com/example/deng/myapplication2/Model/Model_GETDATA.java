@@ -67,14 +67,14 @@ public class Model_GETDATA implements IModel_GETDATA {
                     ArrayList<String> mymessage = DealFileUtil.divider(responseBody.byteStream(), integers, strings,"@");
                     mymessage.remove(0);
                     mymessage.set(mymessage.size()-1,mymessage.get(mymessage.size()-1).substring(0,mymessage.get(mymessage.size()-1).length()-2));
-                   ArrayList<String[]> mymessages=new ArrayList<String[]>();
+                    ArrayList<String[]> mymessages=new ArrayList<String[]>();
                     for(int i=0;i<mymessage.size();i++){
                         String[] scope=mymessage.get(i).split("\\|");
                         mymessages.add(scope);
                     }
                     for(int j=0;j<mymessages.size();j++){
-                            stationBeans.add(new StationBean(mymessages.get(j)[0], mymessages.get(j)[1],
-                                    mymessages.get(j)[2],mymessages.get(j)[3],mymessages.get(j)[4],mymessages.get(j)[5]));
+                        stationBeans.add(new StationBean(mymessages.get(j)[0], mymessages.get(j)[1],
+                                mymessages.get(j)[2],mymessages.get(j)[3],mymessages.get(j)[4],mymessages.get(j)[5]));
                     }
                     DataBase2 dataBase2 = new DataBase2(context, "stationmessage.db", null, 1);
                     if (DataBaseUtil2.select(dataBase2) != 0) {
@@ -84,9 +84,9 @@ public class Model_GETDATA implements IModel_GETDATA {
                     stationmessage=stationBeans;
                     onFinish.showStations(stationmessage);
                 }
-              if(i==3) {
-                   String a = CheckFolders.getSDPath();
-                  FileUtil.deleteFile(a + "/trainmessage.txt");
+                if(i==3) {
+                    String a = CheckFolders.getSDPath();
+                    FileUtil.deleteFile(a + "/trainmessage.txt");
                     FileUtil.writeBig(a + "/trainmessage.txt", responseBody.byteStream(),false);
                     FileUtil.replaceFileStr(a + "/trainmessage.txt", "var train_list =", "");
                     ArrayList<TrainBean> trainbeans = FileUtil.readToJson(a + "/trainmessage.txt");

@@ -113,8 +113,8 @@ public class MainActivity extends AppCompatActivity implements IView {
         edit1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                   dismiss=true;
-                   showPopupView(edit1);
+                dismiss=true;
+                showPopupView(edit1);
             }
 
             @Override
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements IView {
         new KeyboardChangeListener(this).setKeyBoardListener(new KeyboardChangeListener.KeyBoardListener() {
             @Override
             public void onKeyboardChange(boolean isShow, int keyboardHeight) {
-              Log.e("软键盘是否显示",String.valueOf(isShow));
+                Log.e("软键盘是否显示",String.valueOf(isShow));
                 sharedPreferencessettings=MainActivity.this.getSharedPreferences("settings",MODE_PRIVATE);
                 editorsettings=sharedPreferencessettings.edit();
                 editorsettings.putBoolean("keyboardshow",isShow);
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity implements IView {
             }
         };
 
-       asr = EventManagerFactory.create(this, "asr");
+        asr = EventManagerFactory.create(this, "asr");
         asr.registerListener(ev1);
         asr2=EventManagerFactory.create(this,"asr");
         asr2.registerListener(ev2);
@@ -284,25 +284,25 @@ public class MainActivity extends AppCompatActivity implements IView {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 Intent intent=new Intent(MainActivity.this,Main2Activity.class);
-                 intent.putExtra("leave",edit1.getText().toString().trim());
-                 intent.putExtra("arrive",edit2.getText().toString().trim());
-                 startActivity(intent);
+                Intent intent=new Intent(MainActivity.this,Main2Activity.class);
+                intent.putExtra("leave",edit1.getText().toString().trim());
+                intent.putExtra("arrive",edit2.getText().toString().trim());
+                startActivity(intent);
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 Intent intent=new Intent(MainActivity.this,Main4Activity.class);
+                Intent intent=new Intent(MainActivity.this,Main4Activity.class);
                 sharedPreferences = MainActivity.this.getSharedPreferences("times", MODE_PRIVATE);
-               ye= sharedPreferences.getInt("cyear",-1);
+                ye= sharedPreferences.getInt("cyear",-1);
                 mo=sharedPreferences.getInt("cmonth",-1);
                 da=sharedPreferences.getInt("cday",-1);
                 intent.putExtra("cyear",ye);
                 intent.putExtra("cmonth",mo);
                 intent.putExtra("cday",da);
                 Log.e("忽必烈",ye+"#"+mo+"#"+da);
-                 startActivity(intent);
+                startActivity(intent);
             }
         });
     }
@@ -489,8 +489,8 @@ public class MainActivity extends AppCompatActivity implements IView {
                         int cy = sharedPreferences.getInt("cyear", 0);
                         int cm = sharedPreferences.getInt("cmonth", 0);
                         if(cy!=Y||cm!=M){
-                             final Presenter_GETDATA presenter_getdata = new Presenter_GETDATA(MainActivity.this, MainActivity.this);
-                             presenter_getdata.setData();
+                            final Presenter_GETDATA presenter_getdata = new Presenter_GETDATA(MainActivity.this, MainActivity.this);
+                            presenter_getdata.setData();
                             initedView();
                         }
                         settings2 = true;

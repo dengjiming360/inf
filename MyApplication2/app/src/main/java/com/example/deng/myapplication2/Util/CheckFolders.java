@@ -20,10 +20,10 @@ public class CheckFolders {
         }
         return sdDir.getPath()+"/train";
     }
-        public static void isExist(String path) {
-            File file = new File(path);
-            if (!file.exists()) {
-                file.mkdir();
-            }
+    public static void isExist(String path) {
+        File file = new File(path);
+        if (!file.exists()) {
+            file.mkdir();
+        }
     }
 }

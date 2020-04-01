@@ -1,9 +1,15 @@
 package com.example.deng.myapplication2.Bean;
 
-public class StationBean
-{
+public class StationBean {
+    public String enname;
+    public String num;
+    public String stationbianhao;
+    public String stationjianpin;
+    public String stationname;
+    public String stationpinyin;
+
     public String getEnname() {
-        return enname;
+        return this.enname;
     }
 
     public void setEnname(String enname) {
@@ -11,7 +17,7 @@ public class StationBean
     }
 
     public String getStationname() {
-        return stationname;
+        return this.stationname;
     }
 
     public void setStationname(String stationname) {
@@ -19,7 +25,7 @@ public class StationBean
     }
 
     public String getStationbianhao() {
-        return stationbianhao;
+        return this.stationbianhao;
     }
 
     public void setStationbianhao(String stationbianhao) {
@@ -27,7 +33,7 @@ public class StationBean
     }
 
     public String getStationpinyin() {
-        return stationpinyin;
+        return this.stationpinyin;
     }
 
     public void setStationpinyin(String stationpinyin) {
@@ -35,7 +41,7 @@ public class StationBean
     }
 
     public String getStationjianpin() {
-        return stationjianpin;
+        return this.stationjianpin;
     }
 
     public void setStationjianpin(String stationjianpin) {
@@ -43,14 +49,12 @@ public class StationBean
     }
 
     public String getNum() {
-        return num;
+        return this.num;
     }
 
     public void setNum(String num) {
         this.num = num;
     }
-
-    public String enname;
 
     public StationBean(String enname, String stationname, String stationbianhao, String stationpinyin, String stationjianpin, String num) {
         this.enname = enname;
@@ -60,10 +64,4 @@ public class StationBean
         this.stationjianpin = stationjianpin;
         this.num = num;
     }
-
-    public String stationname;
-    public String stationbianhao;
-    public String stationpinyin;
-    public String stationjianpin;
-    public String num;
 }

@@ -1,8 +1,11 @@
 package com.example.deng.myapplication2.Bean;
 
 public class StaBean {
+    public String jianpin;
+    public String name;
+
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -10,7 +13,7 @@ public class StaBean {
     }
 
     public String getJianpin() {
-        return jianpin;
+        return this.jianpin;
     }
 
     public void setJianpin(String jianpin) {
@@ -21,7 +24,4 @@ public class StaBean {
         this.name = name;
         this.jianpin = jianpin;
     }
-
-    public String name;
-    public String jianpin;
 }
