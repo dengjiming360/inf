@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+attr? choose_color
+attr? choose_type
+attr? day_bg
+attr? holiday_color
+attr? lunar_color
+attr? lunar_size
+attr? show_holiday
+attr? show_last_next
+attr? show_lunar
+attr? show_term
+attr? solar_color
+attr? solar_size
+attr? switch_choose
+attr? week_color
+attr? week_size
+attr? week_str
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+drawable blue_circle
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id lunar_day
+id multi
+id single
+id solar_day
+layout item_month_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style AppTheme
+styleable CalendarView show_lunar show_last_next show_holiday show_term solar_color solar_size lunar_color lunar_size holiday_color choose_color day_bg switch_choose choose_type
+styleable WeekView week_str week_color week_size

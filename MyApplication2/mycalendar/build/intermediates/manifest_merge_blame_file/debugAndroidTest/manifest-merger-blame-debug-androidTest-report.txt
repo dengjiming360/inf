@@ -1,0 +1,118 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.deng.mycalendar.test" >
+4
+5    <uses-sdk
+5-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:5:5-74
+6        android:minSdkVersion="15"
+6-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:5:15-41
+7        android:targetSdkVersion="28" />
+7-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:11:5-15:82
+10        android:name="android.support.test.runner.AndroidJUnitRunner"
+10-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:11:22-83
+11        android:functionalTest="false"
+11-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:13:22-53
+13        android:label="Tests for com.example.deng.mycalendar.test"
+13-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:15:22-80
+14        android:targetPackage="com.example.deng.mycalendar.test" />
+14-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:12:22-78
+15
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-71
+16-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-68
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+17-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-76
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-67
+18-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-64
+19    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+19-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-75
+19-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-72
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
+20-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-78
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-67
+21-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-64
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-80
+22-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-77
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
+23-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-78
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+24-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-76
+25    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+25-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-85
+25-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:22-82
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-68
+26-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:22-65
+27    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+27-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-76
+27-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-73
+28    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+28-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-76
+28-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-73
+29    <uses-permission android:name="android.permission.GET_TASKS" />
+29-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-68
+29-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:22-65
+30    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+30-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-71
+30-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:22-68
+31    <uses-permission android:name="android.permission.CAMERA" />
+31-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-65
+31-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:22-62
+32    <uses-permission android:name="android.permission.VIBRATE" />
+32-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-66
+32-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:22-63
+33    <uses-permission android:name="android.permission.FLASHLIGHT" />
+33-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:5-69
+33-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:22-66
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:5-81
+34-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:22-78
+35    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+35-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-79
+35-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:22-76
+36    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+36-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-75
+36-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-72
+37    <uses-permission android:name="android.permission.BLUETOOTH" />
+37-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:5-68
+37-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:22-65
+38    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+38-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:5-74
+38-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:22-71
+39
+40    <application
+40-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:7:5-9:19
+41        android:allowBackup="true"
+41-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-35
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2ffb88316df49107418be0872d7babe4\core-1.0.0\AndroidManifest.xml:22:18-86
+43        android:debuggable="true"
+43-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:7:18-43
+44        android:icon="@mipmap/ic_launcher"
+44-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-43
+45        android:label="@string/app_name"
+45-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:9-41
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-54
+47        android:supportsRtl="true"
+47-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:9-35
+48        android:theme="@style/AppTheme" >
+48-->[__tested_artifact__::mycalendar] D:\R\MyApplication2\mycalendar\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:9-40
+49        <uses-library android:name="android.test.runner" />
+49-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:8:9-60
+49-->D:\R\MyApplication2\mycalendar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8487579204519586277.xml:8:23-57
+50    </application>
+51
+52</manifest>

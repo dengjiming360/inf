@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.deng.mycalendar"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:13:5-71
+11-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:13:22-68
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:14:5-79
+12-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:14:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:15:5-67
+13-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:15:22-64
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:16:5-75
+14-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:16:22-72
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:17:5-81
+15-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:17:22-78
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:15:5-67
+16-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:15:22-64
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:19:5-80
+17-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:19:22-77
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:17:5-81
+18-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:17:22-78
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:14:5-79
+19-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:14:22-76
+20    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+20-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:22:5-85
+20-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:22:22-82
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:23:5-68
+21-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:23:22-65
+22    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+22-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:24:5-76
+22-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:24:22-73
+23    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+23-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:25:5-76
+23-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:25:22-73
+24    <uses-permission android:name="android.permission.GET_TASKS" />
+24-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:26:5-68
+24-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:26:22-65
+25    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+25-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:27:5-71
+25-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:27:22-68
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:28:5-65
+26-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:28:22-62
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:29:5-66
+27-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:29:22-63
+28    <uses-permission android:name="android.permission.FLASHLIGHT" />
+28-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:30:5-69
+28-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:30:22-66
+29    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+29-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:31:5-81
+29-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:31:22-78
+30    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+30-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:32:5-79
+30-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:32:22-76
+31    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+31-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:16:5-75
+31-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:16:22-72
+32    <uses-permission android:name="android.permission.BLUETOOTH" />
+32-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:34:5-68
+32-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:34:22-65
+33    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+33-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:36:5-74
+33-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:36:22-71
+34
+35    <application
+35-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:5:5-12:19
+36        android:allowBackup="true"
+36-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:6:9-35
+37        android:icon="@mipmap/ic_launcher"
+37-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:7:9-43
+38        android:label="@string/app_name"
+38-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:8:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:9:9-54
+40        android:supportsRtl="true"
+40-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:10:9-35
+41        android:theme="@style/AppTheme" >
+41-->D:\R\MyApplication2\mycalendar\src\main\AndroidManifest.xml:11:9-40
+42    </application>
+43
+44</manifest>

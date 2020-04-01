@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lin1"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton android:id="@+id/before"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left"
+                ></ImageButton>
+            <TextView android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                ></TextView>
+            <ImageButton android:id="@+id/after"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right"
+                ></ImageButton>
+        </LinearLayout>
+        <com.example.deng.mycalendar.weiget.WeekView
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <com.example.deng.mycalendar.weiget.CalendarView
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            calendarview:choose_type="single"
+            calendarview:show_holiday="true"
+            calendarview:show_lunar="true"
+            calendarview:show_term="true"
+            calendarview:switch_choose="false">
+
+        </com.example.deng.mycalendar.weiget.CalendarView>
+    </LinearLayout>
+</LinearLayout>
